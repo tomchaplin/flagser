@@ -11,6 +11,7 @@ flagser-coefficients
 flagser-coefficients-memory
 *.dSYM
 *.flag
+!test*.flag
 *.homology
 *.h5
 *.png
@@ -20,3 +21,4 @@ include/algorithms.h
 *.vscode
 .cache
 build/
+*.out

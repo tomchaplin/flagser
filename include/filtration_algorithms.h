@@ -31,6 +31,16 @@ template <typename T> inline value_t max(T values, int from, int to) {
 	return max;
 }
 
+template <typename T> inline value_t maxabs(T values, int from, int to) {
+	value_t max = 0;
+	for (int index = from; index <= to; index++) {
+		value_t next_value = abs(values[index]);
+		max = index == 0 || next_value > max ? next_value : max;
+	}
+
+	return max;
+}
+
 template <typename T> inline value_t min(T values, int from, int to) {
 	value_t min = 0;
 	for (int index = from; index <= to; index++) {

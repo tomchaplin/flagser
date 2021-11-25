@@ -4,6 +4,8 @@ zero overrideVertices overrideEdges = 0
 
 max = max(faceWeights)
 
+maxabs = maxabs(faceWeights)
+
 max3 = max(faceWeights)
 
 max_plus_one = max(faceWeights) + 1
