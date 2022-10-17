@@ -1,5 +1,33 @@
 # flagser
 
+## Modifications
+
+This fork of `flagser` adds one new operation to the math parser, called `maxabs`.
+This outputs the maximum of the absolute values of the filtration times of the faces.
+The purpose of this operation is so that some edges can be marked with a negative values; these edges will all appear before `t=0` but higher simplices arrive at the same time.
+This allows the computation of grounded persistent directed flag complex homology (GrPdFlH).
+To facilitate this application, we include a small Python wrapper in `GrPdFlH.py`.
+
+The Python wrapper exports a single function `GrPdFlH(digraph, flagser_path)`.
+The first input should be a weighted `networkx.DiGraph` and the second input should be the path to the compiled `flagser` binary from this fork.
+The example A.13 from the paper is included to illustrate usage of the wrapper.
+
+In order to run the test, follow the build instructions as below.
+Then move back into the root directory and run the example
+```
+cd ..
+python example_a13.py
+```
+You should see the output
+```
+[[0.0, 21.0]]
+[[0.0, 30.0]]
+```
+
+A new software package, designed specifically for computing GrPdFlH and GrPPH is forthcoming.
+
+## Original README
+
 Copyright © 2017–2021 Daniel Lütgehetmann.
 
 ### Description
