@@ -25,6 +25,7 @@ You should see the output
 ```
 
 A new software package, designed specifically for computing GrPdFlH and GrPPH is forthcoming.
+For the associated article, please see [the arXiv preprint](https://arxiv.org/abs/2210.11274).
 
 ## Original README
 
