@@ -24,7 +24,7 @@ You should see the output
 [[0.0, 30.0]]
 ```
 
-A new software package, designed specifically for computing GrPdFlH and GrPPH is forthcoming.
+A new software package, designed specifically for computing GrPdFlH and GrPPH is available [here](https://github.com/tomchaplin/grpphati).
 For the associated article, please see [the arXiv preprint](https://arxiv.org/abs/2210.11274).
 
 ## Original README
